@@ -1,0 +1,17 @@
+:root { --bg:#fff; --fg:#222; --muted:#889; --brand:#0b73ff; }
+* { box-sizing:border-box; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;}
+body { margin:0; color:var(--fg); background:var(--bg); }
+header { display:flex; justify-content:space-between; align-items:center; padding:10px 14px; border-bottom:1px solid #eee; }
+h1 { font-size:18px; margin:0; }
+.tabs button { border:1px solid #ddd; background:#f8f8f8; padding:6px 10px; margin-left:6px; border-radius:6px; cursor:pointer; }
+.tabs .active { background:var(--brand); color:#fff; border-color:var(--brand); }
+main { display:grid; grid-template-columns:280px 1fr 360px; height: calc(100vh - 52px); }
+aside { padding:10px; border-right:1px solid #eee; overflow:auto; }
+.search { display:flex; gap:6px; margin-bottom:10px; }
+#results div { padding:6px; border:1px solid #eee; border-radius:6px; margin:6px 0; cursor:pointer; }
+.mapwrap { position:relative; }
+#map { position:absolute; inset:0; }
+#panel { border-left:1px solid #eee; padding:12px; overflow:auto; }
+.panel { display:none; }
+.panel.active { display:block; }
+#now .big { font-size:64px; font-weight:800; padding:12px; background:#eef5ff; width:max-content; border-radius:10px; }

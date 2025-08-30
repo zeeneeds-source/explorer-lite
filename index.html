@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kogenta Explorer Lite (Demo)</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Kogenta Explorer Lite</h1>
+    <div class="tabs">
+      <button id="tab-now" class="active">Now</button>
+      <button id="tab-flows">Flows</button>
+      <button id="tab-forecast">Forecast</button>
+    </div>
+  </header>
+  <main>
+    <aside>
+      <label>Search POI</label>
+      <div class="search">
+        <input id="q" placeholder="ASDA, Tesco, Oxford Circus" />
+        <button id="searchBtn">Search</button>
+      </div>
+      <div id="results"></div>
+    </aside>
+    <section class="mapwrap">
+      <div id="map"></div>
+    </section>
+    <section id="panel">
+      <div id="now" class="panel active">
+        <div class="big"></div>
+      </div>
+      <div id="flows" class="panel"></div>
+      <div id="forecast" class="panel">
+        <canvas id="spark" width="320" height="80"></canvas>
+      </div>
+    </section>
+  </main>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
